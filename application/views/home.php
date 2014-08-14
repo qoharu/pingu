@@ -1,88 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+<div class="row pinguin">
+  
+    <!-- Grid bagian kiri | Kontainer utama -->
+    
+  <div class="left-container">
+    <div class="left-modul thread-modul">
+      <h4 class="title"><?php echo $title; ?></h4>
+      <span class="date"><i class="glyphicon glyphicon-time"></i> &nbsp;28 Februari, 2014 &nbsp; &bull; &nbsp;</span>
+      <span class="comment"><i class="glyphicon glyphicon-comment"></i> 13 &nbsp;&bull;</span>
+      <span class="comment"> &nbsp;Posted by admin</span>
+      <br><hr>
+      <p class="wtsay">Pinguin yang ini sudah diupdate dengan teknologi terbaru dari segi desain dan programming. Terima kasih kepada para senior member khususnya web developement yang telah berusaha membuat ulang website pinguin.<br>
+      Semoga nanti pinguin bisa lebih berguna sebagai forum, tempat download, tempat belajar, dan...</p>
+      <a href="#" class="button-slide">
+        <i class="glyphicon glyphicon-chevron-right detail"></i>
+        <div class="detail-wrap">Selengkapnya</div>
+      </a>
+    </div>
 
-	<style type="text/css">
+    <div class="left-modul info-modul">
+      <h4 class="title">Rekruitasi senior member 2014</h4>
+      <span class="date"><i class="glyphicon glyphicon-time"></i> &nbsp;15 Maret, 2014 &nbsp; &bull; &nbsp;</span>
+      <span class="comment"><i class="glyphicon glyphicon-comment"></i> 13 &nbsp;&bull;</span>
+      <span class="comment"> &nbsp;Posted by admin</span>
+      <br><hr>
+      <p class="wtsay">Tidak disangka sudah hampir setahun kita sudah bekerja di cnc. Karena sudah setahun sudah sepatutnya kita mencari anggota lab baru yang akan mengurus lab ini setelah kita pergi.<br>Semoga kita bisa mendapatkan calon-calon terbaik yang bisa memegang amanah...</p>
+      <a href="#" class="button-slide">
+        <i class="glyphicon glyphicon-chevron-right detail"></i>
+        <div class="detail-wrap">Selengkapnya</div>
+      </a>
+    </div>
+        
+    <div class="left-modul thread-modul">
+      <h4 class="title">Selamat datang di Pinguin!</h4>
+      <span class="date"><i class="glyphicon glyphicon-time"></i> &nbsp;28 Februari, 2014 &nbsp; &bull; &nbsp;</span>
+      <span class="comment"><i class="glyphicon glyphicon-comment"></i> 13 &nbsp;&bull;</span>
+      <span class="comment"> &nbsp;Posted by admin</span>
+      <br><hr>
+      <p class="wtsay">Pinguin yang ini sudah diupdate dengan teknologi terbaru dari segi desain dan programming. Terima kasih kepada para senior member khususnya web developement yang telah berusaha membuat ulang website pinguin.<br>
+      Semoga nanti pinguin bisa lebih berguna sebagai forum, tempat download, tempat belajar, dan...</p>
+      <a href="#" class="button-slide">
+        <i class="glyphicon glyphicon-chevron-right detail"></i>
+        <div class="detail-wrap">Selengkapnya</div>
+      </a>
+    </div>
+  </div>    
+    
+<!-- Grid bagian kanan | Kontainer utama -->    
+  <div id="nav-right"></div>    
 
-	::selection{ background-color: #E13300; color: white; }
-	::moz-selection{ background-color: #E13300; color: white; }
-	::webkit-selection{ background-color: #E13300; color: white; }
-
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
-
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
-
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body{
-		margin: 0 15px 0 15px;
-	}
-	
-	p.footer{
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-	
-	#container{
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		-webkit-box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
-</head>
-<body>
-
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
-
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 </div>
-
-</body>
-</html>

@@ -4,7 +4,7 @@
 		public function index(){
 
 			//if user not logged in
-			if($this->session->userdata('isLogin')==FALSE){
+			if( ! $this->session->userdata('isLogin') ){
 				//go to login page
 				redirect('account/login');
 			}else{
@@ -19,12 +19,12 @@
 
 			//if user has logged in then
 			if($this->session->userdata('isLogin')){
-				redirect('account/profile');
-				
+				redirect('account/profile');	
 			}
 			//show the login form
 			$this->load->view('template/header',$data);
 			$this->load->view('login_form');
+			$this->load->view('template/footer');
 		}
 
 		public function logout(){
@@ -33,11 +33,15 @@
 		}
 
 		public function register(){
-			/* TODO
-			user logged in -> show the profile page
-			link to register account
-			*/
-			echo "HALAMAN REGISTER";
+			$data['title'] = "Register";
+
+			if($this->session->userdata('isLogin')){
+				redirect('account/profile');
+			}
+
+			$this->load->view('template/header',$data);
+			$this->load->view('register');
+			$this->load->view('template/footer');
 		}
 
 		public function profile($username){

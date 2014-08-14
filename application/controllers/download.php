@@ -2,13 +2,13 @@
 	/* TODO :
 	Building backbone structure
 	*/
-	class Forum extends CI_Controller {
+	class Download extends CI_Controller {
 
 		public function index(){
-			$data['title'] = "Forum";
+			$data['title'] = "Download";
 			
 			$this->load->view('template/header',$data);
-			$this->load->view('forum');
+			$this->load->view('download');
 			$this->load->view('template/footer',$data);
 		}
 	}

@@ -18,7 +18,9 @@
   </head>
 
   <body>
-      
+    <script src="<?php echo base_url();?>/assets/js/jquery.js"></script>
+    <script src="<?php echo base_url();?>/assets/js/bootstrap.js"></script>
+    
     <!-- Hiasan warna-warna paling atas -->
       
     <div class="top-color">
@@ -46,7 +48,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Pinguin</a>
+      <a class="navbar-brand" href="<?php echo site_url(); ?>">Pinguin</a>
     </div>
 
     <!-- Membuat link-link berubah dari float-left menjadi vertikal teratur -->
@@ -54,10 +56,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="forum.html">Forum</a></li>
-        <li><a href="#">Belajar</a></li>
-        <li><a href="download.html">Download</a></li>
-        <li><a href="#">Kontak</a></li>
+        <li><a href="<?php echo site_url('forum'); ?>">Forum</a></li>
+        <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
+        <li><a href="<?php echo site_url('download'); ?>">Download</a></li>
+        <li><a href="<?php echo site_url('contacts'); ?>">Kontak</a></li>
         <li><form class="search-container" action="#" method="POST"><input type="search" class="form-control search" placeholder="Cari..." >
             <input type="submit" class="btn btn-search" value="Cari">
             </form>

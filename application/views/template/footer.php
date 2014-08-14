@@ -1,6 +1,5 @@
   <!-- Final Footer Page -->
-  <script src="<?php echo base_url();?>/assets/js/jquery.js"></script>        
-  <script src="js/bootstrap.js"></script>
+  <script src="<?php echo base_url();?>/assets/js/script.js"></script>
       <!--
   <script src="js/prefixfree.min.js"></script>
          

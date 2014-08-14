@@ -5,7 +5,7 @@
     <input type="text" name="username" data-toggle="tooltip" data-placement="right" placeholder="Username" data-toggle="tooltip" data-original-title="Username" data-placement="right">
     <input type="password" name="password" placeholder="Password" data-toggle="tooltip" data-original-title="Password" data-placement="right">
     <input type="submit" class="login" name="submit" value="Login">
-    <a href="#" class="pull-left forget">Lupa password?</a>
-    <a href="signup.html" class="pull-right forget">Daftar di sini!</a>
+    <a href="<?php echo site_url('account/forgot_password'); ?>" class="pull-left forget">Lupa password?</a>
+    <a href="<?php echo site_url('account/register'); ?>" class="pull-right forget">Daftar di sini!</a>
     <!--<input type="reset" class="pull-right"> -->
 </form>
