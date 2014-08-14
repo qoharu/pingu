@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pinguin - Sebuah website laboratorium CNC</title>
+    <title>Pinguin - <?php echo $title ?></title>
 
     <!-- CSS Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/assets/css/style.css" rel="stylesheet">
 
     <!-- buat favicon -->
-    <link rel="shortcut icon" href="img/favicon-pinguin.ico" >
-    <link rel="icon" type="/image/ico"  href="img/favicon-pinguin.ico" >
+    <link rel="shortcut icon" href="<?php echo base_url();?>/assets/img/favicon-pinguin.ico" >
+    <link rel="icon" type="/image/ico"  href="<?php echo base_url();?>/assets/img/favicon-pinguin.ico" >
     
     <!-- end -->
   </head>
