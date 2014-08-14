@@ -27,8 +27,8 @@
         </ul>
       </div>
       <div class="user-choice">
-        <a href="#">Sunting profil</a>&nbsp; <span class="bull">&bull;</span>&nbsp;
-        <a href="index.html">Keluar</a>
+        <a href="<?php echo site_url('account/profile'); ?>">Sunting profil</a>&nbsp; <span class="bull">&bull;</span>&nbsp;
+        <a id="logout" href="<?php echo site_url('account/logout'); ?>">Keluar</a>
       </div>
     </div>
     <?php } ?>

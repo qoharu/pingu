@@ -464,6 +464,9 @@ body {
 
 /* Form Login */
 
+#login-alert{
+    display: none;
+}
 .form-login {
     vertical-align: middle;
     background:white;

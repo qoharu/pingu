@@ -1,5 +1,9 @@
 <?php
 	class Account extends CI_Controller {
+		function __construct(){
+			parent::__construct(); 
+			$this->load->model('account_model');
+		}
 
 		public function index(){
 
@@ -25,6 +29,16 @@
 			$this->load->view('template/header',$data);
 			$this->load->view('login_form');
 			$this->load->view('template/footer');
+		}
+
+		public function login_process(){
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+			if( $this->account_model->validate($username,$password) == TRUE ){
+				echo "true";
+			}else{
+				echo "false";
+			}
 		}
 
 		public function logout(){
