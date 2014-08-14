@@ -17,6 +17,11 @@
 			echo "HALAMAN LOGIN";
 		}
 
+		public function logout(){
+			$this->session->sess_destroy();
+			redirect('home');
+		}
+
 		public function register(){
 			/* TODO
 			user logged in -> show the profile page
