@@ -13,7 +13,7 @@
 		}
 
 		public function date($year,$month,$day,$page=1){
-
+			echo "blablabla";
 		}
 
 		public function search($query,$page=1){

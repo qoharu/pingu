@@ -4,19 +4,19 @@ $(document).ready(function(){
     $("input").tooltip();
     
     // load rightside navbar
-	$("#nav-right").load('/pingu/template/aside').hide().fadeIn('slow');
+	$("#nav-right").load(base_url+'template/aside').hide().fadeIn('slow');
 
-	// login
+	// AJAX login
 	$("#login-submit").click(function(){    
         username=$("#login-username").val();
         password=$("#login-password").val();
         $.ajax({
            type: "POST",
-           url: "/pingu/account/login_process",
+           url: base_url+"account/login_process",
            data: "username="+username+"&password="+password,
            success: function(html){    
         		if(html=='true'){
-             		window.location = "http://localhost/pingu";
+             		window.location = base_url;
             	}else if(html=='false'){
             		$("#login-alert").hide().html("<h4 class='alert-notif'>Ups, ada yang eror!</h4><p class=suggest>Username atau Password tidak cocok :3.</p>").fadeIn('slow');
             	}else{
@@ -35,10 +35,28 @@ $(document).ready(function(){
 	$("#logout").click(function(){
 		$.ajax({
 			type: "POST",
-			url: "/pingu/account/logout"
+			url: base_url+"account/logout"
 		})
-		$("#nav-right").load('/pingu/template/aside').hide().fadeIn('slow');
+		$("#nav-right").load(base_url+'template/aside').hide().fadeIn('slow');
 	})
 
 
+
+  // Parsedown Preview
+  $('.nulis').on('keyup || keypress || focus',function(e){
+    var tulisan = $('.nulis').val();
+    if(tulisan!="") {
+      $.post(base_url+'admin/previewpost', {inilah: tulisan} ,function(data) {
+        $(".diparse").html(data).show();
+      });
+    }
+  });
+  $('.nulis').autogrow();
+  var tulisan = $('.nulis').val();
+  if(tulisan!="") {
+    $.post(base_url+'admin/previewpost', {inilah: tulisan} ,function(data) {
+      $(".diparse").html(data).show();
+    });
+  }
+  
 });

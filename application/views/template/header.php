@@ -7,19 +7,19 @@
     <title>Pinguin - <?php echo $title ?></title>
 
     <!-- CSS Bootstrap -->
-    <link href="<?php echo base_url();?>/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo base_url();?>/assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet">
 
     <!-- buat favicon -->
-    <link rel="shortcut icon" href="<?php echo base_url();?>/assets/img/favicon-pinguin.ico" >
-    <link rel="icon" type="/image/ico"  href="<?php echo base_url();?>/assets/img/favicon-pinguin.ico" >
+    <link rel="shortcut icon" href="<?php echo base_url();?>assets/img/favicon-pinguin.ico" >
+    <link rel="icon" type="/image/ico"  href="<?php echo base_url();?>assets/img/favicon-pinguin.ico" >
     
     <!-- end -->
   </head>
 
   <body>
-    <script src="<?php echo base_url();?>/assets/js/jquery.js"></script>
-    <script src="<?php echo base_url();?>/assets/js/bootstrap.js"></script>
+    <script src="<?php echo base_url();?>assets/js/jquery.js"></script>
+    <script src="<?php echo base_url();?>assets/js/bootstrap.js"></script>
     
     <!-- Hiasan warna-warna paling atas -->
       

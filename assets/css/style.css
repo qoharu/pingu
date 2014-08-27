@@ -766,3 +766,14 @@ footer {
     text-decoration: underline;
     color:#2980b9;
 }
+
+
+/* EDITOR */
+
+.nulis{
+    width: 33%;
+    resize:none;
+    position:fixed;
+    top:15%;
+    left: 65%;
+}
