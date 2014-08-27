@@ -2,6 +2,8 @@
 	/* INFO
 	dashboard page
 	*/
+	
+	//coba
 
 	class Admin extends CI_Controller {
 
